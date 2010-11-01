@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/fesplugas/typus.git
+  revision: df458d4d2bd1ab9456ef71cbe97b2250f850dcc7
+  specs:
+    typus (3.0.3)
+      will_paginate (~> 3.0.pre2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -65,6 +72,7 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
+    will_paginate (3.0.pre2)
 
 PLATFORMS
   ruby
@@ -72,3 +80,4 @@ PLATFORMS
 DEPENDENCIES
   pg
   rails (= 3.0.1)
+  typus!

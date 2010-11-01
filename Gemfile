@@ -7,6 +7,10 @@ gem 'rails', '3.0.1'
 
 gem 'pg'
 
+gem 'typus', :git => 'git://github.com/fesplugas/typus.git'
+
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

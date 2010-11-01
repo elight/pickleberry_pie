@@ -1,0 +1,27 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+AdminUser:
+  fields:
+    default: first_name, last_name, role, email, language
+    list: email, role, status
+    form: first_name, last_name, role, email, password, password_confirmation, language
+    options:
+      selectors: role, language
+      booleans:
+        status: Active, Inactive
+  filters: status, role
+  search: first_name, last_name, email, role
+  application: Admin Panel
+  description: Users Administration
+Page:
+  fields:
+    list: name, title
+    form: title, body
+    show: id, title, body
+    options:
+      rich_text: body
+  search: name
+  application: Content
+
