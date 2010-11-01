@@ -15,13 +15,4 @@ AdminUser:
   search: first_name, last_name, email, role
   application: Admin Panel
   description: Users Administration
-Page:
-  fields:
-    list: name, title
-    form: title, body
-    show: id, title, body
-    options:
-      rich_text: body
-  search: name
-  application: Content
 

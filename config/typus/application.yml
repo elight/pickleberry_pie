@@ -1,0 +1,8 @@
+Page:
+  fields:
+    list: name, title
+    form: title, body
+    show: id, title, body
+  search: name
+  application: Content
+
