@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/fesplugas/typus.git
-  revision: df458d4d2bd1ab9456ef71cbe97b2250f850dcc7
+  revision: df458d4
   specs:
     typus (3.0.3)
       will_paginate (~> 3.0.pre2)
@@ -40,6 +40,7 @@ GEM
     builder (2.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    haml (3.0.23)
     i18n (0.4.2)
     mail (2.2.9)
       activesupport (>= 2.3.6)
@@ -78,6 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   pg
   rails (= 3.0.1)
   typus!

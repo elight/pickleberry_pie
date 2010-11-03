@@ -1,0 +1,107 @@
+$mid_bg_color: #306e25
+$font_color: #000
+$link_color: #004e77
+$footer_font_color: $mid_bg_color - #444
+
+html, body
+	font: 13px/18px Arial, sans-serif
+	background: $mid_bg_color url(../images/grass.jpg) repeat-x 50% 230px
+	color: $font_color
+
+a, a:visited
+	color: $link_color
+
+/* Layout */
+
+html, body, #wrap
+	height: 100%
+
+body > #wrap
+	height: auto
+	min-height: 100%
+
+#main
+	width: 100%
+
+#header .insides, #mid .insides, #footer .insides
+	width: 960px
+	margin: 0 auto
+	position: relative
+
+#mid
+	padding-top: 10px
+	min-height: 400px
+
+#main
+	padding-bottom: 50px
+
+#footer
+	position: relative
+	margin-top: -55px
+	height: 50px
+	clear: both
+	color: $footer_font_color
+	text-align: center
+	.insides
+		padding-top: 20px
+
+#header
+	background: #fff url(../images/clouds.jpg) repeat-x 50% 0
+	.insides
+		background: #fff url(../images/clouds.jpg) repeat-x 50% 0
+		height: 230px
+	#logo
+		width: 247px
+		height: 159px
+		background: transparent url(../images/logo.jpg) no-repeat 0 0
+		display: block
+		position: absolute
+		top: 77px
+		left: 24px
+		text-indent: -9999px
+	#nav
+		position: absolute
+		top: 178px
+		right: 20px
+		background: transparent url(../images/nav-bg.jpg) no-repeat 50% 0
+		padding: 10px 5px
+		li
+			float: left
+			margin: 0 25px
+			a
+				font-size: 18px
+				text-transform: lowercase
+			a:hover
+				border-bottom: 1px solid $link_color + #888
+	#announcement
+		width: 522px
+		height: 105px
+		background: transparent url(../images/announcement.jpg) 0 0
+		display: block
+		position: absolute
+		top: 11px
+		right: 34px
+		.inner
+			width: 370px
+			height: 45px
+			overflow: hidden
+			position: absolute
+			top: 33px
+			left: 25px
+			text-align: center
+
+/* Home page */
+
+#slogan-and-pictures
+	width: 887px
+	height: 443px
+	background: transparent url(../images/slogan-and-pictures.jpg) no-repeat 50% 0
+	margin: 33px auto 20px
+
+
+/* Text blocks */
+.text
+	.column
+		width: 420px
+		float: left
+		margin: 0 30px
