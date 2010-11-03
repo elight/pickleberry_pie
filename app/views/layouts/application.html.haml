@@ -30,7 +30,8 @@
               %li= link_to("Contact", root_path)
             
             #announcement
-              .inner An announcement will go here, editable by admins so that they can post any text here they like.
+              .inner
+                = yield(:announcement) || "Announcements go here"
         
         #mid
           .insides

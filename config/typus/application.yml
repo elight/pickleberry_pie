@@ -1,8 +1,8 @@
 Page:
   fields:
     list: name, title
-    form: name, title, body
-    show: id, title, body
+    form: announcement, name, title, body
+    show: id, announcement, name, title, body
   search: name
   application: Content
 
