@@ -1,33 +1,3 @@
-#slogan-and-pictures
-
-.text
-  .column
-    %h3 A charity for children and families
-    %p
-      Pickleberry Pie Inc., a public charity (501 c 3) for children
-      and families, has been presenting music-oriented
-      entertainment and educational projects for more than two
-      decades. Our many projects are united by a single  mission:
-      to use the healing power of music and personal contact
-      to improve the lives of children who are not well.
-    
-    %h3 You make it happen
-    %p
-      The funding for these concerts currently comes through
-      donations from foundations and people like you. Since
-      the Pickleberries are primarily a volunteer organization,
-      all of the money we raise goes directly to help the kids.
-      We have had numerous requests to expand to help other kids
-      in other locations.  Only your donations can make this possible.
-      
-  .column
-    %h3 Thousands of concerts
-    %p
-      Pickleberry Pie Inc. has put on thousands of monthly concerts
-      in over 23 children's hospitals, hospices and special education 
-      schools across the United States.  We present paid children's
-      musicians, storytellers, puppeteers and magicians to kids and
-      their families in hospital auditoriums, playrooms, and day rooms.
-      When kids are too sick to come to the playroom, we go to them
-      with personal mini-concerts. All of this is done in conjunction
-      with hospital staff. It's a wonderful program.
+- content_for :announcement do
+  = @page.announcement.try(:html_safe)
+= @page.body.html_safe

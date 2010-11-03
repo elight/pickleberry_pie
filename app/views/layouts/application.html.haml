@@ -24,10 +24,10 @@
             
             %ul#nav
               %li= link_to("Home", root_path)
-              %li= link_to("Performers", root_path)
-              %li= link_to("Projects", root_path)
-              %li= link_to("Donate", root_path)
-              %li= link_to("Contact", root_path)
+              %li= link_to("Performers", page_path(:performers))
+              %li= link_to("Projects", page_path(:projects))
+              %li= link_to("Donate", page_path(:donate))
+              %li= link_to("Contact", page_path(:contact))
             
             #announcement
               .inner

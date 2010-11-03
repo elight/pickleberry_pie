@@ -1,5 +1,5 @@
 PickleberryPie::Application.routes.draw do
   
-  match '/pages/:name',  :to => 'pages#show'
-  match '/',             :to => 'home#index',  :as => 'root'
+  match '/:name', :to => 'pages#show', :as => 'page', :constraint => { :name => /!(admin)/ }
+  match '/',      :to => 'home#index', :as => 'root'
 end
