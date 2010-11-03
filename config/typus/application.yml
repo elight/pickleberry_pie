@@ -1,7 +1,7 @@
 Page:
   fields:
     list: name, title
-    form: title, body
+    form: name, title, body
     show: id, title, body
   search: name
   application: Content
